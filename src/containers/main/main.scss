@@ -1,0 +1,40 @@
+.main-container-content {
+  flex: 10;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  .btn-area{
+    // flex: 1;
+    max-width: 680px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 1.5rem;
+    user-select: none;
+
+    .content-info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+      }
+    }
+    .main-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  }
+}

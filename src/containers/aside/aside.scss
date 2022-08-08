@@ -1,0 +1,53 @@
+.aside-container {
+  flex: 3.23;
+  max-width: 400px;
+  background: #FFF;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  user-select: none;
+  padding: 32px;
+
+  .aside-container-empty-message-content {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 1rem;
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+      text-align: center;
+      color: #343A40;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      color: #495057;
+    }
+  }
+
+  .aside-container-message-content {
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    max-width: 336px;
+    
+    p {
+      max-height: 500px;
+      overflow-y: auto;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 150%;
+      color: #495057;
+      text-align: left;
+
+    }
+  }
+}
