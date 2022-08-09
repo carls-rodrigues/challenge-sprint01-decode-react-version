@@ -6,7 +6,6 @@
   align-items: center;
   
   .btn-area{
-    // flex: 1;
     max-width: 680px;
     display: flex;
     flex-flow: column nowrap;
@@ -35,6 +34,19 @@
       display: flex;
       justify-content: center;
       gap: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) { 
+  .main-container-content {
+    min-height: 504px;
+    margin-top: 80px;
+    .btn-area {
+      .main-buttons {
+        flex-flow: column nowrap;
+        gap: 1.5rem;
+      }
     }
   }
 }

@@ -40,7 +40,8 @@
     max-width: 336px;
     
     p {
-      max-height: 500px;
+      word-break: break-word;
+      max-height: 450px;
       overflow-y: auto;
       font-weight: 400;
       font-size: 24px;
@@ -49,5 +50,32 @@
       text-align: left;
 
     }
+  }
+}
+@media screen and (max-width: 1240px) {
+  .aside-container {
+    max-width: 100%;
+    max-height: 343px;
+    .aside-container-empty-message-content {
+      max-height: 197px;
+      img {
+        display: none;
+      }
+    }
+    .aside-container-message-content {
+      max-height: 343px;
+      max-width: 624px;
+      justify-content: center;
+      gap: 32px;
+
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 680px) { 
+  .aside-container {
+    padding: 0px;
   }
 }

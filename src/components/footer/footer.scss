@@ -6,3 +6,16 @@ footer {
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: 1240px) {
+  footer {
+    max-width: 230px;
+    position: absolute;
+    bottom: 40px;
+  }
+}
+@media screen and (max-width: 640px) { 
+  footer {
+    display: none;
+  }
+}
